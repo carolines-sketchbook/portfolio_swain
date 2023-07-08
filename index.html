@@ -12,15 +12,41 @@
 
 body {
 		font-family:'Vermin Vibes 1989';
-        background-image: radial-gradient(circle, #000000 1.5px, rgba(0, 0, 0, 0) 1.5px);
+
+
+
+  background:
+
+     /* grid background */
+        linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
+        linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+        linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(-90deg, #aaa 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+        linear-gradient(#aaa 1px, transparent 1px),
+        #f2f2f2;
+         background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+
+     /* dotted background */
+        /* background-image: radial-gradient(circle, #000000 1.5px, rgba(0, 0, 0, 0) 1.5px);
         background-color: rgb(255,248,147);
         background-color: linear-gradient(137deg, rgba(255,248,147,1) 0%, rgba(153,210,255,1) 100%);
-        background-size: 40px 40px;
-	}
+        background-size: 40px 40px; */
+    }
 
     .portfolio {
         font-size:100px;
-        color:rgb(0, 90, 169);
+        color:rgb(36, 42, 113);
         left:20px;
         top:20px;
     }
