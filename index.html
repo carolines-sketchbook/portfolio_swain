@@ -13,7 +13,33 @@
 body {
 
   background:
-     /* grid background */
+     /* grid background 2 */
+        linear-gradient(-90deg, rgba(213, 221, 219, 0.07) 1px, transparent 1px),
+        linear-gradient(rgba(213, 221, 219, 0.07) 1px, transparent 1px), 
+        linear-gradient(-90deg, rgba(213, 221, 219, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(213, 221, 219, 0.05) 1px, transparent 1px),
+        linear-gradient(transparent 3px, #171c1b 3px, #171c1b 78px, transparent 78px),
+        /* linear-gradient(-90deg, #807f75 1px, transparent 1px),
+        linear-gradient(-90deg, transparent 3px, #171c1b 3px, #171c1b 78px, transparent 78px),
+        linear-gradient(#807f75 1px, transparent 1px),  */
+         #171c1b;
+         background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
+
+     /* dotted background */
+        /* background-image: radial-gradient(circle, #000000 1.5px, rgba(0, 0, 0, 0) 1.5px);
+        background-color: rgb(255,248,147);
+        background-color: linear-gradient(137deg, rgba(255,248,147,1) 0%, rgba(153,210,255,1) 100%);
+        background-size: 40px 40px; */
+
+        /* grid background orig
         linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px),
         linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), 
         linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
@@ -31,16 +57,38 @@ body {
         80px 80px,
         80px 80px,
         80px 80px,
-        80px 80px;
-
-     /* dotted background */
-        /* background-image: radial-gradient(circle, #000000 1.5px, rgba(0, 0, 0, 0) 1.5px);
-        background-color: rgb(255,248,147);
-        background-color: linear-gradient(137deg, rgba(255,248,147,1) 0%, rgba(153,210,255,1) 100%);
-        background-size: 40px 40px; */
+        80px 80px; */
     }
 
 /*  
+
+color codes:
+
+    grey: 
+    rgb(23, 28, 27)
+    #171c1b
+
+    light grey:
+    rgb(213, 221, 219)
+    #d5dddb
+    
+    salmon: 
+    (255,173,174,255)
+    #ffadae
+
+    orange:
+    rgba(255,210,187,255)
+    #ffd2bb
+
+    green:
+    rgb(239, 255, 157)
+    #efff9d
+
+    turquoise:
+    (187,255,216,255)
+    #bbffd8
+
+
 
 font list:
     Alagard
@@ -55,17 +103,18 @@ font list:
     Pica Hole
     Chlorenf
     TRS-Million
-
 */
     .portfolio {
         font-family:'Vermin Vibes 1989';
         font-size:100px;
-        color:rgb(169, 227, 250);
-        padding-left:20%;
-        padding-top:1px;
+        color:rgb(187,255,216);
+        margin:0;
+        padding:0%;
+        border:0%;
     }
     .caroline {
-        font-family:'TRS-Million';
+        font-family:'Silkscreen';
+        color: rgb(239, 255, 157);
 
 
     }
@@ -76,10 +125,10 @@ font list:
 <body>
 
     <div class ="portfolio">
-        <h1>Portfolio</h1>
+        Portfolio
     </div>
     <div class ="caroline">
-        <h1>Caroline Swain</h1>
+        Caroline Swain
     </div>
 
 </body>
