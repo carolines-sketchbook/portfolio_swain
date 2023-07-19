@@ -94,56 +94,33 @@
 
         /* image examples kms */
 
-        .image1{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius:10px;
-        }
-        .image2{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius:10px;
-        }
-        .image3{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius:10px;
-        }
-        .image4{
-            max-width: 100%;
-            max-height: 100%;
-            border-radius:10px;
-        }
-        .image5{
-
-        }
-        .image6{
-            
-        }
-        .image7{
-            
-        }
-        .image8{
-            
-        }
-
+        .image1 img,
+        .image2 img,
+        .image3 img,
+        .image4 img,
+        .image5 img,
+        .image6 img,
+        .image7 img,
+        .image8 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin:auto;
+        } 
         .site-header {
             background-color: rgba(0, 0, 0, .85);
             -webkit-backdrop-filter: saturate(180%) blur(20px);
             backdrop-filter: saturate(180%) blur(20px);
         }
-
         .site-header a {
             color: #727272;
             transition: color .17s ease-in-out;
             text-decoration: none;
         }
-
         .site-header a:hover {
             color: #fff;
             text-decoration: none;
         }
-
         body {
             background:
             linear-gradient(-90deg, rgba(213, 221, 219, 0.07) 1px, transparent 1px),
@@ -152,7 +129,6 @@
             linear-gradient(rgba(213, 221, 219, 0.05) 1px, transparent 1px),
             linear-gradient(transparent 3px, #171c1b 3px, #171c1b 78px, transparent 78px),
             #171c1b;
-            
          background-size:
             4px 4px,
             4px 4px,
@@ -163,7 +139,6 @@
             80px 80px,
             80px 80px;
         }
-
         .portfolio{
             font-family:'Vermin Vibes 1989';
             font-size: 8.2rem;
@@ -190,11 +165,6 @@
             font-family:'Silkscreen';
             font-size:;
         }
-
-        /*
- * Extra utilities
- */
-
         .flex-equal>* {
             flex: 1;
         }
@@ -208,10 +178,8 @@
         #myDiv {
         background-color: pink; /* Initial background color */
         }
-
     </style>
 </head>
-
 <body>
                             <div id="myDiv"></div>
                                 <script src="script.js"></script>
@@ -234,7 +202,6 @@
             <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
         </div>
     </nav>
-
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <div class="portfolio">Portfolio</div>
@@ -251,17 +218,16 @@
             </a>
         </div>
     </div>
-
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="typo mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
             <div class="my-3 py-3">
                 <!-- first headline -->
                 <h2 class="display-5">Typography</h2>
-                <p class="lead">x flyers about x</p>
+                <p class="lead">Flyers, event posters, booklets, etc.</p>
             </div>
             <div class="image1 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/sequoia-park.png">
-                <img src = "/pngs/sequoia-park.png" alt = "image1">
+                <img src = "/pngs/sequoia-park.png" alt = "image1" loading="lazy">
                 </a>
             </div>
         </div>
@@ -269,26 +235,25 @@
             <div class="my-3 p-3">
                 <!-- second headline -->
                 <h2 class="display-5">Logos</h2>
-                <p class="lead">x companies/programs used</p>
+                <p class="lead">Made in Adobe Illustrator and Photoshop</p>
             </div>
             <div class="image2 bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/logo_koi.png">
-                <img src = "/pngs/logo_koi.png" alt = "image2">
+                <img src = "/pngs/logo_koi.png" alt = "image2" loading="lazy">
                 </a>
             </div>
         </div>
     </div>
-
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="photography mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <!-- third headline -->
                 <h2 class="display-5">Photography</h2>
-                <p class="lead">a collection of my photography work</p>
+                <p class="lead">A collection of my photography work</p>
             </div>
             <div class="image3 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/photoexample.png">
-                <img src = "/pngs/photoexample.png" alt = "image3">
+                <img src = "/pngs/photoexample.png" alt = "image3" loading="lazy">
                 </a>
             </div> 
         </div> 
@@ -296,16 +261,15 @@
             <div class="my-3 py-3"> 
                 <!-- fourth headline -->
                 <h2 class="display-5">Pixel Art</h2> 
-                <p class="lead">stylized art</p> 
+                <p class="lead">Stylized art</p> 
             </div> 
             <div class="image4 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;"> 
                 <a href = "/pngs/peach-1.png">
-                <img src = "/pngs/peach-1.png" alt = "image4"> 
+                <img src = "/pngs/peach-1.png" alt = "image4" loading="lazy"> 
                 </a>
             </div> 
         </div> 
     </div> 
-
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="vr mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
@@ -315,32 +279,31 @@
             </div>
             <div class="image5 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/earthourfuture.jpg">
-                <img src = "/pngs/earthourfuture.jpg" alt = "image5"> 
+                <img src = "/pngs/earthourfuture.jpg" alt = "image5" loading="lazy"> 
             </div>
         </div>
         <div class="app mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3">
                 <!-- sixth headline -->
                 <h2 class="display-5">App Design</h2>
-                <p class="lead">mobile application layout</p>
+                <p class="lead">Mobile application layout</p>
             </div>
             <div class="image6 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/timecapsule.png">
-                <img src = "/pngs/timecapsule.png" alt = "image6">
+                <img src = "/pngs/timecapsule.png" alt = "image6" loading="lazy">
             </div>
         </div>
     </div>
-
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
         <div class="personal mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <!-- seventh headline -->
                 <h2 class="display-5">Personal</h2>
-                <p class="lead">commissions and self-assigned projects</p>
+                <p class="lead">Commissions and self-assigned projects</p>
             </div>
             <div class="image7 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/personalwork.png">
-                <img src = "/pngs/personalwork.png" alt = "image7">
+                <img src = "/pngs/personalwork.png" alt = "image7" loading="lazy">
             </div>
         </div>
         <div class="other mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
@@ -351,13 +314,11 @@
             </div>
             <div class="image8 shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 0 0;">
                 <a href = "/pngs/rainbowclock.png">
-                <img src = "/pngs/rainbowclock.png" alt = "image8">
+                <img src = "/pngs/rainbowclock.png" alt = "image8" loading="lazy">
             </div>
         </div>
     </div>
-
     <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"> -->
-
     <footer class="container py-5">
         <div class="row">
             <!-- <div class="col-12 col-md">
@@ -411,84 +372,29 @@
             </div> -->
         </div>
     </footer>
-
-
-<!-- <script>
-   // BACKGROUND CODE WORKING
-document.addEventListener("mousemove", function(event) {
-  // Get the cursor position
-  var x = event.clientX;
-  var y = event.clientY;
-
-  // Calculate the RGB values based on the cursor position
-  var red = Math.floor((x / window.innerWidth) * 255);
-  var green = Math.floor((y / window.innerHeight) * 255);
-  var blue = 255; // Constant blue value
-
-  // Set the background color of the body using the calculated RGB values
-  document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
-});
-</script> -->
-
-
-<!--     
+<img src="/path/to/image.jpg"
+     srcset="/path/to/image-320w.jpg 320w,
+             /path/to/image-640w.jpg 640w,
+             /path/to/image-1024w.jpg 1024w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     alt="Image">
 <script>
-// Get the div element
 var myDiv = document.querySelector(".portfolio");
-
-// Add an event listener for the "mousemove" event
-document.addEventListener("mousemove", function(event) {
-  // Get the cursor position
-  var x = event.clientX;
-  var y = event.clientY;
-
-  // Calculate the RGB values based on the cursor position
-  var red = Math.floor((x / window.innerWidth) * 255);
-  var green = Math.floor((y / window.innerHeight) * 173);
-  var blue = 174; // Constant green value
-
-  // Set the text color using the calculated RGB values
-  var color = "rgb(" + red + ", " + green + ", " + blue + ")";
-  myDiv.style.color = color;
-
-
-  
-});
-
-
-
-</script> -->
-
-
-<script>
-// Get the div element
-var myDiv = document.querySelector(".portfolio");
-
-// Define the starting and ending colors
+// starting and ending colors
 var startColor = [99, 210, 140]; // #bbffd8 teal
 var endColor = [199, 184, 96]; // #e8d37d yellow
-
-// Add an event listener for the "mousemove" event
 document.addEventListener("mousemove", function(event) {
-  // Get the cursor position
   var x = event.clientX;
   var y = event.clientY;
-
-  // Calculate the RGB values based on the cursor position
   var red = Math.floor((x / window.innerWidth) * (endColor[0] - startColor[0]) + startColor[0]);
   var green = Math.floor((y / window.innerHeight) * (endColor[1] - startColor[1]) + startColor[1]);
   var blue = Math.floor((x / window.innerWidth) * (endColor[2] - startColor[2]) + startColor[2]);
-
   // Set the text color using the calculated RGB values
   var color = "rgb(" + red + ", " + green + ", " + blue + ")";
   myDiv.style.color = color;
 });
-
-
-
 </script>
-
-
 </body>
-
 </html>
